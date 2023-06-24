@@ -2,5 +2,5 @@ pandas
 numpy
 matplotlib
 seaborn
-pickle
+pickle5
 scikit-learn
