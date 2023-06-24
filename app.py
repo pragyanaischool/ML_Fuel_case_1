@@ -75,8 +75,8 @@ def main():
 
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True)
-    st.title('Diabetics Disease Classification: 0 No disease, 1 Diabetics disease')
-    st.image("""https://www.pep2dia.com/wp-content/uploads/2021/03/how-to-diagnose-diabetes.png""")
+    st.title('Pragyan AI Case Study @ Fuel')
+    st.image("""https://altcont.fibe.in/wp-content/uploads/2020/06/rendered.png""")
     st.header('Enter the Health Info for the Diabetic Diagnosis:')
     # following lines create boxes in which user can enter data required to make prediction
     Gender = st.selectbox('Gender',("Male","Female"))
