@@ -7,8 +7,8 @@ from sklearn.ensemble import RandomForestClassifier
 pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
-@st.cache()
-
+#@st.cache()
+@st.cache_data()
 # defining the function which will make the prediction using the data which the user inputs
 def prediction(Gender, Married, ApplicantIncome, CoapplicantIncome, Dependent, LoanAmount, Loan_Amount_Term, Credit_History,Self_Employed,Property_Area,Education):
 
