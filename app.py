@@ -1,6 +1,7 @@
 
 import pickle
 import streamlit as st
+from sklearn.ensemble import RandomForestClassifier
 
 # loading the trained model
 pickle_in = open('classifier.pkl', 'rb')
@@ -74,7 +75,9 @@ def main():
 
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True)
-
+    st.title('Diabetics Disease Classification: 0 No disease, 1 Diabetics disease')
+    st.image("""https://www.pep2dia.com/wp-content/uploads/2021/03/how-to-diagnose-diabetes.png""")
+    st.header('Enter the Health Info for the Diabetic Diagnosis:')
     # following lines create boxes in which user can enter data required to make prediction
     Gender = st.selectbox('Gender',("Male","Female"))
     Married = st.selectbox('Marital Status',("Unmarried","Married"))
